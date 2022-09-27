@@ -19,7 +19,6 @@ html, body {
 .header{
   background-color: yellow;
   height: 10vh;
-  border: 10px solid red;
   padding: 20px;
   }
 /*비주얼*/
@@ -31,14 +30,43 @@ html, body {
 .main{
   background-color: blue;
   height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-flow;
+  justify-content: space-around
 }
 /*슬로건*/
 .slogan{
   background-color: aqua;
   height: 10vh;
 }
+
+.group{
+
+}
+
+
+.group1{
+background-color: pink;
+width: 250px;
+}
+.group2{
+background-color: lime;
+width: 380px;
+}
+.group3{
+background-color: salmon;
+width: 190px;
+}
+
+
+
+
 /*풋터*/
 .footer{
+  .group1{
+    
+  }
   background-color: purple;
   height: 10vh;
 }
