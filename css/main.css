@@ -3,24 +3,88 @@ html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+body{
+  color:#000;
+  background-color: #fff;
+
+}
+
+/*링크 스타일*/
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
+
 /*박스사이즈 재정의*/
 *, *::before, *::after{
   box-sizing: border-box;
 }
 
+/*건너뛰기 링크*/
+.skip-nav{
+  background-color: #000;
+  text-align: center;
+  color:#fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 10;
+}
+
+.skip-nav a{
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  
+}
+
+.skip-nav a:focus{
+  outline-offset: -4px;
+  position: static;
+}
+
+
 /*레이아웃*/
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
   margin: 0 auto;
-  
 }
+
+
 
 /*헤더*/
 .header{
   background-color: yellow;
-  height: 10vh;
-  padding: 20px;
-  }
+  position: relative;
+}
+
+/*로고*/
+.logo{
+  margin: 0;
+  background-color: #teal;
+  font-size: 1em;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+
+.logo a{
+  display: block;
+}
+
+.logo img{
+  vertical-align: top;
+}
+
+/*멤버 서비스 링크*/
+.member-service{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: aquamarine;
+}
+
 /*비주얼*/
 .visual{
   background-color: orange;
